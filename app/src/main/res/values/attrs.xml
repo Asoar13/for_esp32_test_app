@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 摇杆属性设置 -->
+    <declare-styleable name="JoystickView">
+        <attr name="joystickBase" format="reference" />
+        <attr name="joystickCap" format="reference" />
+        <attr name="base_proportionOf_back" format="integer" />
+        <attr name="cap_proportionOf_base" format="integer" />
+    </declare-styleable>
+
+</resources>
