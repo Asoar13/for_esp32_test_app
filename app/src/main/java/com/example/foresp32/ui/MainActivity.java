@@ -40,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
     private void initScreen() {
         EdgeToEdge.enable(this);
         setContentView(mianBing.getRoot());
+
+        // 新增：动态设置背景图片
+        mianBing.getRoot().setBackgroundResource(R.drawable.bg_main);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
